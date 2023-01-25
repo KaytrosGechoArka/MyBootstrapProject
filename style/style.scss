@@ -1,0 +1,88 @@
+$bg-color:#6304ea;
+$form-floating-label-opacity:.65;
+body{
+    background-color: $bg-color;
+}
+.mybuttons:focus{
+    box-shadow: 1px 5px 2px gray;
+}
+.a{
+    position: absolute;
+    transition: 0.8s linear;
+}
+.a:focus{
+    box-shadow: none;
+}
+.h6{
+    animation: setting 3s infinite linear;
+}
+@keyframes setting{
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360DEG);
+    }
+}
+.nav-side-header{
+    position: sticky;
+    top: 0;
+    z-index: 3;
+    height: 70px;
+    width: 100%;
+    justify-content: start;
+    padding-left: 15px;
+    padding-top: 30px;
+}
+.mya{
+    margin-top: 15px;
+    margin-left: 40%;
+    a{
+        text-decoration: none;
+    }
+}
+label{
+    opacity: $form-floating-label-opacity;
+}
+.myBtn:hover{
+    background-color: rgba(134, 127, 127, 0.1);
+    color: black;
+}
+.myBtn:focus{
+    box-shadow: none;
+}
+.form-control:focus{
+    border:2px solid $bg-color;
+    box-shadow: none;
+}
+//  .form-control:focus+label, .form-control:not(:placeholder-shown)+label{
+//      top: -18px;
+//      left: 6px;
+//      color: $bg-color;
+//  }
+h1{
+    font-family: sans-serif;
+}
+.form-check{
+    .form-check-input:hover{
+        box-shadow: 1px 1px 1px 10px rgb(192, 183, 183,0.3);
+    }
+    .form-check-input:checked{
+        background-color: $bg-color;
+        box-shadow: 1px 1px 1px 10px #e2d1f3;
+        border: $bg-color;
+    }
+}
+.btn1{
+    background-color: $bg-color;
+    color: whitesmoke;
+}
+.btn1:focus{
+    box-shadow: 1px 1px 4px 2px rgb(148, 77, 199) ;
+}
+.btn1:hover{
+    color: whitesmoke;
+}
+.text-decoration-none{
+    color: $bg-color;
+}
